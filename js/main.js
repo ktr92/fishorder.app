@@ -23,6 +23,10 @@ $(document).ready(function () {
 
     });
   
+  $('.catalogmenu__items li.parent').on('click', function() {
+    $(this).find('ul.submenu').slideToggle();
+    $(this).toggleClass('active');
+  });
 
 
 });

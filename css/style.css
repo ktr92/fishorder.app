@@ -173,7 +173,7 @@ input.error_input {
 .mainmenu {
 	display: none;
 	white-space: nowrap;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     min-height: 100vh;
@@ -196,7 +196,7 @@ input.error_input {
 
 .bglayer {
 	display: none;
-	 position: absolute;
+	 position: fixed;
 	 width: 100%;
 	 height: 100%;
 	 min-height: 100vh;
@@ -474,9 +474,10 @@ h2 {
 		background-image: url(/images/sale.png);
 }
 .productcard__image {
-	height: 123px;
+/*  	height: 123px;*/
 	position: relative;
 	overflow: hidden;
+	padding-top: 71%;
 }
 .productcard__image img{
 	 position: absolute;
@@ -485,9 +486,9 @@ h2 {
     top: -99999px;
     bottom: -99999px;
     margin: auto;
-        width: initial;
+      width: initial;
     height: initial;
-    max-height: 100%;
+    max-height: 107%;
     max-width: initial;
   
   
@@ -700,7 +701,8 @@ h2 {
 .fixedmenu {
 	position: fixed;
 	bottom: 0;
-	z-index: 9;
+	    z-index: 101;
+
 	border-top: 1px solid #cac7c5;
 	background-color: #fff;
 	padding: 8px 0;
@@ -710,9 +712,89 @@ h2 {
 	margin: auto;
 }
 .productcard{
-		max-width: 175px;
+		/*max-width: 175px;*/
 		margin: auto;
 	}
+
+.preload__content {
+	background-image: url(/images/bg1.png);
+	background-position: center;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.catalogmenu__items {
+	padding: 0 8px;
+}
+.catalogmenu__items > ul > li  {
+	
+	background-repeat: no-repeat;
+	display: block;
+	white-space: nowrap;
+
+	border-bottom: 1px solid #e3e3e3;
+}
+.catalogmenu__items > ul > li > a {
+	height: 42px;
+	display: block;
+	line-height: 42px;
+		background-repeat: no-repeat;
+		padding-left: 50px;
+}
+.catalogmenu__items > ul > li > span {
+	height: 42px;
+	line-height: 42px;
+	display: block;
+}
+.catalogmenu__items > ul > li > a,
+.catalogmenu__items > ul > li, 
+.catalogmenu__items > ul > li > span  {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+
+}
+.catalogmenu__items li.parent > ul > li >a {
+	color: #666666;
+	font-size: 12px;
+	display: block;
+	padding: 12px 0 12px 20px;
+
+}
+
+
+.catalogmenu__items li.parent > ul  {
+	padding-left: 50px;
+	display: none;
+}
+.catalogmenu__items li.parent {
+	position: relative;
+}
+.catalogmenu__items li.parent:after {
+	content: url(/images/arrow_right.png); 
+	position: absolute;
+	top: 13px; 
+	right: 11px;
+	z-index: 1;
+}
+.catalogmenu__items li.parent.active:after {
+	transform: rotate(90deg);
+}
+
+.catalogmenu__items li.active > a {
+	color: #05b2c2;
+	background-color: #e6f3f5;
+
+}
+
+
+
 
 @media (min-width: 481px) {
 	
