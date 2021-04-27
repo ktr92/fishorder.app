@@ -607,6 +607,12 @@ h2 {
 .productcard__buttons svg path {
 	fill: #818181;
 }
+
+.productcard__buttons .wishlist_added svg path {
+	fill: #05b2c2;
+}
+
+
 .productcard__hot {}
 
 .btn_main {
@@ -746,7 +752,6 @@ h2 {
 	display: block;
 	line-height: 42px;
 		background-repeat: no-repeat;
-		padding-left: 50px;
 }
 .catalogmenu__items > ul > li > span {
 	height: 42px;
@@ -793,8 +798,304 @@ h2 {
 
 }
 
+.catalogmenu__icon {
+	width: 50px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 5px;
+}
+
+.catalogmenu__icon img {
+    vertical-align: middle;
+}
+
+.catalogmenu__text {
+		display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+.searchpopup__image .productcard__image {
+	width: 75px;
+}
+
+.searchpopup__content {
+	display: flex;
+	padding: 12px;
+}
+
+.searchpopup__main {
+	padding-left: 13px;
+}
+
+.searchpopup__item {
+	    border-bottom: 1px solid #e3e3e3;
+	    position: relative;
+}
+.searchpopup__items .searchpopup__item:last-child {
+	border-bottom: none;
+}
+
+.searchpopup__item .productcard__param {
+	margin-bottom: 0;
+}
+
+.searchpopup__button {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+}
+
+.searchpopup {
+  box-shadow: 0px 3px 7px 0px #dadada;
+      position: absolute;
+    z-index: 99;
+    background: #ffff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 31px;
+}
 
 
+.headersearch {
+    position: relative;
+}
+
+.popup__close svg {
+	width: 12px;
+	height: 12px;
+}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    color: #666666;
+    max-width: 222px;
+}
+[type="checkbox"]:not(:checked) + label a,
+[type="checkbox"]:checked + label a {
+    text-decoration: underline;
+     color: #666666;
+}
+
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before {
+	background: #fff;
+	 content: '';
+    position: absolute;
+    left: 0px; top: 0px;
+    width: 13px; height: 13px;
+    border: 1px solid #666666;
+    border-radius: 3px;
+
+}
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0px; top: 0px;
+    width: 13px; height: 13px;
+    border: 1px solid #05b2c2;
+    background: #05b2c2;
+    border-radius: 3px;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    font-size: 9px;
+    line-height: 1.2;
+    color: #fff;
+    transition: all .2s;
+    font-weight: 600;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #999999;
+    background-color: #fff;
+}
+[type="checkbox"]:disabled:checked + label:after {
+    color: #999999;
+}
+[type="checkbox"]:disabled + label {
+    color: #aaaaaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+    border: 2px dotted #05b2c2;
+}
+
+.popup {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+   	display: none;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.popup__wrapper {
+	padding: 30px 19px 30px 19px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	overflow: hidden;
+	 background: #fff;
+}
+.popup__content {}
+.popup__close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.popup__title {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+}
+.popup__main {}
+.form {}
+.subsform {}
+.form__line {
+	margin-bottom: 16px;
+}
+.form__input {}
+.form__button {}
+.btn_main {}
+.form__check {}
+
+.form input {
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	 font-size: 12px;
+	 height: 35px;
+	 padding: 0 10px;
+}
+
+.form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #666666;
+  font-size: 12px;
+}
+.form input::-moz-placeholder { /* Firefox 19+ */
+  color: #666666;
+   font-size: 12px;
+}
+.form input:-ms-input-placeholder { /* IE 10+ */
+  color: #666666;
+   font-size: 12px;
+}
+.form input:-moz-placeholder { /* Firefox 18- */
+  color: #666666;
+   font-size: 12px;
+}
+
+.form__line input  {
+	width: 192px;
+}
+.form__line .form__input  {
+	margin-right: 10px;
+}
+.form__line .btn_main  {
+	height: 35px;
+	line-height: 35px;
+	width: 107px;
+}
+
+.btn_main {
+	border: none;
+}
+
+.form__line {
+	display: flex;
+}
+.productssort__button {
+	border-radius: 3px;
+	background: #f4f4f4;
+	padding: 9px;
+	display: inline-block;
+}
+
+.productssort {
+	text-align: right;
+	margin: 10px 0;
+	position: relative;
+	display: inline-block;
+    width: 100%;
+    clear: both;
+}
+
+.productssort__wrapper {
+	float: right;
+}
+.productssort__button svg {
+	width: 15px;
+	height: 15px;
+}
+
+.productssort__content {
+	position: absolute;
+	box-shadow: 0px 0 7px 0px #dadada;
+	border-radius: 7px;
+	padding: 10px 0 0 0;
+	background: #fff;
+	z-index: 3;
+	top: 34px;
+	right:0;
+	display: none;
+}
+
+.productssort__item a {
+	color: #000;
+	font-size: 12px;
+	padding: 7px 19px;
+	display: block;
+	text-align: left;
+	font-weight: 600;
+	margin-bottom: 10px;
+	min-width: 126px;
+}
+.productssort__item.active a {
+	color: #000;
+	font-size: 12px;
+	padding: 7px 19px;
+	display: block;
+	background: #f2f2f2;
+}
 
 @media (min-width: 481px) {
 	
@@ -818,5 +1119,8 @@ h2 {
 		padding: 0 10px;
 		width: initial;
 	}
+	.productcard__name a {
+    font-size: 10px;
+  }
 
 }
