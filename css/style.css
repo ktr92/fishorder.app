@@ -617,7 +617,7 @@ h2 {
 
 .btn_main {
 	color: #fff;
-  width: 94px;
+  min-width: 94px;
   height: 28px;
  	background: #05b2c2;
  	border-radius: 5px;
@@ -887,6 +887,11 @@ h2 {
     color: #666666;
     max-width: 222px;
 }
+[type="checkbox"]:not(:checked) + label.label_long, 
+[type="checkbox"]:checked + label.label_long {
+	max-width: 100%;
+} 
+
 [type="checkbox"]:not(:checked) + label a,
 [type="checkbox"]:checked + label a {
     text-decoration: underline;
@@ -920,7 +925,7 @@ h2 {
     content: '✔';
     position: absolute;
     top: 1px;
-    left: 2px;
+    left: 1px;
     font-size: 9px;
     line-height: 1.2;
     color: #fff;
@@ -1005,6 +1010,7 @@ h2 {
 	 font-size: 12px;
 	 height: 35px;
 	 padding: 0 10px;
+	 margin-bottom: 10px;
 }
 
 .form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -1097,6 +1103,228 @@ h2 {
 	background: #f2f2f2;
 }
 
+.pagehelp__icon {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #f4f4f4;
+	    text-align: center;
+    line-height: 30px;
+}
+
+.pagehelp a {
+	display: block;
+}
+.pagehelp a span {
+	display: inline-block;
+	vertical-align: middle;
+		color: #666666;
+	font-size: 12px;
+}
+
+
+.pageback a {
+	padding-left: 17px;
+	background-image: url(/images/icon2.png);
+	background-repeat: no-repeat;
+	background-position: left 2px center;
+
+	color: #aaa;
+	font-size: 16px;
+	font-weight: 600;
+
+}
+.pageback span {
+	padding-left: 0;
+	
+	color: #aaa;
+	font-size: 16px;
+	font-weight: 600;
+
+}
+
+.personallinks__link a {
+	padding: 10px 0 7px 0;
+	display: block;
+	color: #666666;
+}
+
+.personallinks__link svg {
+	height: 30px;
+	width: 26px;
+}
+
+.personal__title {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+ 	margin-bottom: 10px;
+}
+
+
+
+.personallinks__icon {
+	width: 30px;
+	text-align: center;
+}
+
+.personallinks__link svg path {
+	fill: #05b2c2;
+}
+
+.personallinks__link a span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.personallinks__link ul li {
+	border-bottom: 1px solid #ccc;
+}
+
+.personallinks__link ul li:last-child {
+	border-bottom: none;
+}
+
+.personallinks__icon {
+	margin-right: 10px;
+}
+
+.pagenav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 0;
+}
+
+.personal table {
+	width: 100%;
+}
+
+.form__check {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+.formlinks {
+	padding: 20px 0;
+}
+.formlinks a {
+	display: block;
+	margin-bottom: 15px;
+  font-size: 14px;
+  color: #666666;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+.form .btn_main {
+	padding:  0 40px;
+}
+
+.pagehelp {
+    white-space: nowrap;
+}
+
+.personalitems {}
+.personalitems__item {
+	    border: 1px solid #ccc;
+	    margin-bottom: 30px;
+
+}
+.personalitems__title {
+	background: #05b2c2;
+	padding: 10px;
+	color: #fff;
+	font-weight: 600;
+	  line-height: 1.2;
+}
+
+.personalitems__block {
+	border-bottom: 1px solid #ebebeb;
+	padding: 10px;
+	margin-bottom: 10px;
+	 font-size: 13px;
+	 line-height: 1.2;
+}
+.personalitems__block > div {
+	margin-bottom: 10px;
+}
+.personalitems__block a  {
+	margin-bottom: 5px;
+	color: #2aa4cf;
+}
+.personalitems__block b  {
+	font-weight: 600;
+}
+.personalitems__buttons  {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px 5px 10px;
+}
+
+.personalitems__buttons a {
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.personalitems__repeat {
+	color: #2aa4cf;
+}
+.personalitems__cancel {
+	color: red;
+}
+.personalitems__more {
+	color: #666666;
+}
+
+.personalitems__main {}
+.personalitems__block {}
+.personalitems__name {
+	color: #666666;
+	margin-bottom: 10px;
+}
+.personalitems__status {}
+.personalstatus {}
+.personalstatus__info {
+	font-weight: 600;
+}
+.personalstatus__status {
+	    background: #f3f4f5;
+    border: 1px solid rgba(128,134,142,0.20);
+    color: #535c69;
+    display: block;
+    width: min-content;
+    white-space: nowrap;
+    padding: 3px 10px;
+    margin: 2px 0;
+    font-weight: 600;
+}
+.personalitems__text {}
+.personalitems__change {}
+.personalitems__info {}
+.personalstatus__red {
+		display: inline-block;
+    padding: 4px 10px 5px 8px;
+    border: 1px solid #eab3b9;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    background: #ffe5e8;
+    color: #d0021b;
+    font-size: 12px;
+}
+.personalitems__buttons {}
+
+.personalstatus__сomplete {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.personalstatus__сomplete .personalstatus__info {
+	color: #4b8c03;
+}
+
+
 @media (min-width: 481px) {
 	
 	.productslist__item {
@@ -1121,6 +1349,9 @@ h2 {
 	}
 	.productcard__name a {
     font-size: 10px;
+  }
+  .pageback span {
+  	font-size: 14px;
   }
 
 }
