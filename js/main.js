@@ -12,6 +12,18 @@ $(document).ready(function () {
       
 
   });
+ $('.productimage__slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      /*autoplay: true,*/
+      autoplaySpeed: 4000,
+      arrows: false,
+      fade: false,
+      dots: true,
+      
+
+  });
 
   $('.menubutton').on('click', function() {
 
