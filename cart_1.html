@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="/css/datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -278,26 +279,26 @@
                 </div>
               </form>
             </div>
-            <div class="searchpopup" style="display: none;">
-              <div class="searchpopup__wrapper">
-                <div class="searchpopup__items">
-                  <div class="searchpopup__item">
-                    <div class="searchpopup__content">
-                      <div class="searchpopup__image">
+            <div class="cartcontent" style="display: none;">
+              <div class="cartcontent__wrapper">
+                <div class="cartcontent__items">
+                  <div class="cartcontent__item">
+                    <div class="cartcontent__content">
+                      <div class="cartcontent__image">
                         <div class="productcard__image"><img src="/images/P1022806.jpg" alt=""></div>
                       </div>
-                      <div class="searchpopup__main">
-                        <div class="searchpopup__name">
+                      <div class="cartcontent__main">
+                        <div class="cartcontent__name">
                           <div class="productcard__name">
                             <a href="">Сибас 300-400 гр. н/р, с/м, в/у, 1,2 кг</a>
                           </div>
                         </div>
-                        <div class="searchpopup__params">
+                        <div class="cartcontent__params">
                           <div class="productcard__param">
                             <span>За 1 кг: 650 руб.</span>
                           </div>
                         </div>
-                        <div class="searchpopup__price">
+                        <div class="cartcontent__price">
                           <div class="productcard__prices">
                             <div class="productcard__price">125.00 ₽</div>
                             <!--нет скидки 
@@ -307,29 +308,29 @@
                               </div>-->
                           </div>
                         </div>
-                        <div class="searchpopup__button">
+                        <div class="cartcontent__button">
                           <div class="productcard__tocart"><a href="" class="btn_main">В корзину</a></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="searchpopup__item">
-                    <div class="searchpopup__content">
-                      <div class="searchpopup__image">
+                  <div class="cartcontent__item">
+                    <div class="cartcontent__content">
+                      <div class="cartcontent__image">
                         <div class="productcard__image"><img src="/images/P1022806.jpg" alt=""></div>
                       </div>
-                      <div class="searchpopup__main">
-                        <div class="searchpopup__name">
+                      <div class="cartcontent__main">
+                        <div class="cartcontent__name">
                           <div class="productcard__name">
                             <a href="">Сибас 300-400 гр. н/р, с/м, в/у, 1,2 кг</a>
                           </div>
                         </div>
-                        <div class="searchpopup__params">
+                        <div class="cartcontent__params">
                           <div class="productcard__param">
                             <span>За 1 кг: 650 руб.</span>
                           </div>
                         </div>
-                        <div class="searchpopup__price">
+                        <div class="cartcontent__price">
                           <div class="productcard__prices">
                             <div class="productcard__price">125.00 ₽</div>
                             <!--нет скидки 
@@ -339,29 +340,29 @@
                               </div>-->
                           </div>
                         </div>
-                        <div class="searchpopup__button">
+                        <div class="cartcontent__button">
                           <div class="productcard__tocart"><a href="" class="btn_main">В корзину</a></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="searchpopup__item">
-                    <div class="searchpopup__content">
-                      <div class="searchpopup__image">
+                  <div class="cartcontent__item">
+                    <div class="cartcontent__content">
+                      <div class="cartcontent__image">
                         <div class="productcard__image"><img src="/images/P1022806.jpg" alt=""></div>
                       </div>
-                      <div class="searchpopup__main">
-                        <div class="searchpopup__name">
+                      <div class="cartcontent__main">
+                        <div class="cartcontent__name">
                           <div class="productcard__name">
                             <a href="">Сибас 300-400 гр. н/р, с/м, в/у, 1,2 кг</a>
                           </div>
                         </div>
-                        <div class="searchpopup__params">
+                        <div class="cartcontent__params">
                           <div class="productcard__param">
                             <span>За 1 кг: 650 руб.</span>
                           </div>
                         </div>
-                        <div class="searchpopup__price">
+                        <div class="cartcontent__price">
                           <div class="productcard__prices">
                             <div class="productcard__price">125.00 ₽</div>
                             <!--нет скидки 
@@ -371,7 +372,7 @@
                               </div>-->
                           </div>
                         </div>
-                        <div class="searchpopup__button">
+                        <div class="cartcontent__button">
                           <div class="productcard__tocart"><a href="" class="btn_main">В корзину</a></div>
                         </div>
                       </div>
@@ -394,64 +395,225 @@
             <span class="pagehelp__text">Техподдержка</span>
             </a>
           </div>
-        </div>
+        </div>        
       </div>
-      <div class="order">
-        <div class="container">
-          <div class="form">
-            <form action="">
-              <div class="form__block">
-                <div class="title">
-                  Контактные данные
-                </div>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td colspan="2"> <input type="text" class="text" name="NAME" placeholder="Имя*" value=""> </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2"> <input type="text" class="text" name="LAST_NAME" placeholder="Фамилия" value=""> </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2"> <input type="text" class="text" name="PERSONAL_PHONE" placeholder="Мобильный телефон*" value=""> </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2"> <input type="text" class="text" name="EMAIL" placeholder="E-mail*" value=""> </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="form__block">
-                <div class="title">
-                  Способы доставки
-                </div>
-               <div class="order_contacts">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td colspan="2" class="delivery_list_radio radiolist"> 
-                        <label for="DELIVERY_13"> 
-                          <input checked type="radio" id="DELIVERY_13" data-cost="0" name="DELIVERY_ID" value="13"> <span>Доставка в пределах МКАД</span> 
-                        </label> 
-                        <label for="DELIVERY_44"> 
-                          <input type="radio" id="DELIVERY_44" data-cost="200" name="DELIVERY_ID" value="44"> <span>Доставка в пределах A-107</span> 
-                        </label> 
-                        <label for="DELIVERY_49"> 
-                          <input type="radio" id="DELIVERY_49" data-cost="0" name="DELIVERY_ID" value="49"> <span>Доставка в г. Красногорск</span> 
-                        </label> 
-                        <label for="DELIVERY_53"> 
-                          <input type="radio" id="DELIVERY_53" data-cost="0" name="DELIVERY_ID" value="53"> <span>Доставка в г. Одинцово</span> 
-                        </label> 
-                        <label for="DELIVERY_23"> 
-                          <input type="radio" id="DELIVERY_23" data-cost="0" name="DELIVERY_ID" value="23"> <span>Самовывоз</span> 
-                        </label> 
 
-                    </tr>
-                  </tbody>
-                </table>
+      <div class="cart">
+        <div class="container">
+            <div class="productinfo">
+              <div class="productinfo__icon">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M386.689,304.403c-35.587,0-64.538,28.951-64.538,64.538s28.951,64.538,64.538,64.538c35.593,0,64.538-28.951,64.538-64.538S422.276,304.403,386.689,304.403z M386.689,401.21c-17.796,0-32.269-14.473-32.269-32.269c0-17.796,14.473-32.269,32.269-32.269c17.796,0,32.269,14.473,32.269,32.269C418.958,386.738,404.485,401.21,386.689,401.21z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M166.185,304.403c-35.587,0-64.538,28.951-64.538,64.538s28.951,64.538,64.538,64.538s64.538-28.951,64.538-64.538S201.772,304.403,166.185,304.403z M166.185,401.21c-17.796,0-32.269-14.473-32.269-32.269c0-17.796,14.473-32.269,32.269-32.269c17.791,0,32.269,14.473,32.269,32.269C198.454,386.738,183.981,401.21,166.185,401.21z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M430.15,119.675c-2.743-5.448-8.32-8.885-14.419-8.885h-84.975v32.269h75.025l43.934,87.384l28.838-14.5L430.15,119.675z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <rect x="216.202" y="353.345" width="122.084" height="32.269"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M117.781,353.345H61.849c-8.912,0-16.134,7.223-16.134,16.134c0,8.912,7.223,16.134,16.134,16.134h55.933c8.912,0,16.134-7.223,16.134-16.134C133.916,360.567,126.693,353.345,117.781,353.345z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M508.612,254.709l-31.736-40.874c-3.049-3.937-7.755-6.239-12.741-6.239H346.891V94.655c0-8.912-7.223-16.134-16.134-16.134H61.849c-8.912,0-16.134,7.223-16.134,16.134s7.223,16.134,16.134,16.134h252.773v112.941c0,8.912,7.223,16.134,16.134,16.134h125.478l23.497,30.268v83.211h-44.639c-8.912,0-16.134,7.223-16.134,16.134c0,8.912,7.223,16.134,16.134,16.134h60.773c8.912,0,16.134-7.223,16.135-16.134V264.605C512,261.023,510.806,257.538,508.612,254.709z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M116.706,271.597H42.487c-8.912,0-16.134,7.223-16.134,16.134c0,8.912,7.223,16.134,16.134,16.134h74.218c8.912,0,16.134-7.223,16.134-16.134C132.84,278.82,125.617,271.597,116.706,271.597z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M153.815,208.134H16.134C7.223,208.134,0,215.357,0,224.269s7.223,16.134,16.134,16.134h137.681c8.912,0,16.134-7.223,16.134-16.134S162.727,208.134,153.815,208.134z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M180.168,144.672H42.487c-8.912,0-16.134,7.223-16.134,16.134c0,8.912,7.223,16.134,16.134,16.134h137.681c8.912,0,16.134-7.223,16.134-16.134C196.303,151.895,189.08,144.672,180.168,144.672z"/>
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
               </div>
+              <div class="productinfo__text">
+                <span>Выбрав еще товар на сумму <b>1789 р</b>, Вы получите <b style="color: #c51230">бесплатную доставку</b>!</span>
               </div>
-              
+            </div>
+
+          <div class="form">
+            <div class="title">
+             Состав заказа
+            </div>
+            <form action="">
+              <div class="cartcontent">
+                <div class="cartcontent__wrapper">
+                  <div class="cartcontent__items">
+                    <div class="cartcontent__item">
+                      <div class="cartcontent__content">
+                        <div class="cartcontent__image">
+                          <div class="productcard__image"><img src="/images/P1022806.jpg" alt=""></div>
+                        </div>
+                        <div class="cartcontent__main">
+                          <div class="cartcontent__name">
+                            <div class="productcard__name">
+                              <a href="">Сибас 300-400 гр. н/р, с/м, в/у, 1,2 кг</a>
+                            </div>
+                          </div>
+                          <div class="cartcontent__params">
+                            <div class="productcard__param">
+                              <span>За 1 кг: 650 руб.</span>
+                            </div>
+                          </div>
+                          <div class="cartcontent__price">
+                            <div class="productcard__prices productcard__prices_discount">
+                                <!-- <div class="productcard__price">125.00 ₽</div>-->
+                                
+                                  <div class="productcard__price2">
+                                    <div class="productcard__oldprice">125.00 ₽</div>
+                                    <div class="productcard__newprice">115.00 ₽</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cartcontent__button">
+                            <div data-cost="cartcount"> 
+                              <div class="quantity">
+                                <input type="button" value="–" class="quantity-minus" data-field="quantity">
+                                <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                                <input type="button" value="+" class="quantity-plus" data-field="quantity">
+                              </div>
+                            </div>
+                            <div class="cartremove">
+                              <a href="">
+                                <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"></path></svg>
+                              </a>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="cartcontent__item">
+                      <div class="cartcontent__content">
+                        <div class="cartcontent__image">
+                          <div class="productcard__image"><img src="/images/P1022806.jpg" alt=""></div>
+                        </div>
+                        <div class="cartcontent__main">
+                          <div class="cartcontent__name">
+                            <div class="productcard__name">
+                              <a href="">Сибас 300-400 гр. н/р, с/м, в/у, 1,2 кг</a>
+                            </div>
+                          </div>
+                          <div class="cartcontent__params">
+                            <div class="productcard__param">
+                              <span>За 1 кг: 650 руб.</span>
+                            </div>
+                          </div>
+                          <div class="cartcontent__price">
+                            <div class="productcard__prices">
+                                <div class="productcard__price">125.00 ₽</div>
+                                <!--нет скидки 
+                                  <div class="productcard__price2">
+                                    <div class="productcard__newprice">115.00 ₽</div>
+                                    <div class="productcard__oldprice">125.00 ₽</div>
+                                  </div>-->
+                              </div>
+                          </div>
+                          <div class="cartcontent__button">
+                            <div data-cost="cartcount"> 
+                              <div class="quantity">
+                                <input type="button" value="–" class="quantity-minus" data-field="quantity">
+                                <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                                <input type="button" value="+" class="quantity-plus" data-field="quantity">
+                              </div>
+                            </div>
+                            <div class="cartremove">
+                              <a href="">
+                                <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"></path></svg>
+                              </a>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>   
+                  </div>
+                </div>
+                 <div class="promocode">
+                  <div class="title">Введите промокод</div>
+                  <div class="promocode__input">
+                    <input type="text">
+                  </div>
+                </div>
+
+                <div class="ordertotal">
+                   <div class="order_final_step2">
+                    <div class="ofb_final_sum"> 
+                      <div>Итого </div> 
+                      <span id="total" data-total="1125" class="ordertotal__total">1125.00 ₽</span>
+                    </div>
+                    <div class="ordertotal__discount">Скидка: 50.00 ₽</div>
+                   
+                    <div class="add_info"> </div>
+                    
+                    <input type="submit" class="btn_main btn_big" value="Оформить без регистрации"> 
+                  </div>
+                </div>
+             
+
+              <div class="cartregister">
+                <div class="title">Я постоянный покупатель Fishorder.ru</div>
+                <div class="cartregister__form">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td style="padding: 0 8px 0 0;">
+                          <input type="text" class="text" name="USER_LOGIN" placeholder="Логин" value=""></td>
+                        <td style="padding: 0 8px 0 0;">
+                         <input type="password" class="text" name="USER_PASSWORD" placeholder="Пароль" value="">
+                        </td>
+                        <td>
+                          <input type="submit" name="submit" value="Авторизоваться" class="btn_main btn_main_small">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="cartregister__link"><a href="">Зарегистрироваться</a></div>
+                <div class="cartregister__info"><i>Регистрация позволит Вам хранить историю заказов, не вводить повторно адрес доставки и получать рассылку на новинки и акции!</i></div>
+              </div>
+             
+          </div>
             </form>
           </div>
         </div>
@@ -491,6 +653,21 @@
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/slick.min.js"></script>
     <script src="/js/maskedinput.js"></script>  
+     <script src="/js/datepicker.min.js"></script>  
+    
     <script type="text/javascript" src="/js/main.js"></script>
+
+
+    <script>
+    	 var datepicker = $('#datep').datepicker().data('datepicker');
+		    datepicker.selectDate(new Date('Wed May 05 2021 13:13:40 +0300'));
+		    $('#datep').change(function() {
+		        var $cDate = $(this).val();
+		        var minDate = '05.05.2021';
+		        if ($cDate < minDate) $(this).val(minDate);
+		    });
+
+		  
+		    </script>
   </body>
 </html>
