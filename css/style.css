@@ -85,7 +85,7 @@ a {
 a:hover,
 a:focus {
 	text-decoration: none;
-	color: #4563FF;
+	color: inherit;
 }
 
 p {
@@ -630,9 +630,12 @@ h2 {
   line-height: 28px;
   padding: 0 17px;
  	white-space: nowrap;
- 	display: block;
+ 	display: inline-block;
  
 
+}
+.btn_main:hover, .btn_main:focus {
+	color: #fff;
 }
 .fitches {
 		background: #05b2c2;
@@ -669,6 +672,26 @@ h2 {
   line-height: 1.1;
   text-align: center;
  
+}
+.fixedmenu__item {
+	position: relative;
+}
+.fixedmenu__item a {
+	display: block;
+}
+.fixedmenu__count {
+	position: absolute;
+	top: -7px;
+	right: 5px;
+	color: #fff;
+	background-color: #c51230;
+	border-radius: 50%;
+	width: 19px;
+	height: 19px;
+	line-height: 19px;
+	text-align: center;
+	font-size: 12px;
+	display: block;
 }
 .fixedmenu__icon {
 	text-align: center;
@@ -1935,7 +1958,200 @@ main {
 	margin: 0 0 15px 0;
 }
 
+#header {
+	background-color: #fff;
+}
+.redtext {
+	color: #c51230;
+}
+
+.pagetitle, .pagetitle h1  {
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-top: 0;
+	line-height: 1.2;
+}
+
+.pagetext, .pagetext p {
+	margin:0 0 20px 0;
+	line-height: 1.3;
+
+}
+
+.pagetext ul  {
+	margin-left: 20px;
+	list-style: disc;
+	margin-bottom: 20px;
+}
+.pagetext ul li {
+	
+}
+
+.page {
+	padding: 15px 0;
+}
+
+.navlinks__items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navlinks__item a {
+	display: block;
+	white-space: nowrap;
+	width: 114px;
+	padding: 8px 0;
+	border: 2px solid #05b2c2;
+	border-radius: 8px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 13px;
+}
+
+ul.red-bllt li {
+	position: relative; padding: 0 0 10px 5px; margin: 0 0 0 10px;
+}
+ul.red-bllt li:last-child {
+	padding-bottom: 0;
+}
+ul.red-bllt li:before {
+	display: block; position: absolute; content: ""; width: 7px; height: 7px;
+background: #c51230; left: -10px; top: 7px;}
+
+.shops__content > div {
+	margin-bottom: 11px;
+}
+
+
+
+.shops__items {
+	padding: 20px 0;
+}
+
+.shops__name {
+	font-weight: bold;
+	line-height: 1.2;
+
+}
+
+.shops__main > div {
+	margin-bottom: 20px;
+}
+
+.page {
+	line-height: 1.2;
+
+}
+
+.shops__content {
+	border-bottom: 1px solid #ccc;
+}
+.shops__item {
+	margin-bottom: 20px;
+}
+
+
+.rating {
+    background: url("/images/rating.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 19px;
+    position: relative;
+    text-align: left;
+    width: 100px;
+margin-bottom:10px;
+}
+.rating span {
+    background: url("/images/rating.png") no-repeat scroll 0 -19px transparent;
+    cursor: pointer;
+    height: 19px;
+    left: 0;
+    position: absolute;
+    text-indent: -2000px;
+}
+.rating_wrap{
+display: inline-block;
+margin-left: 10px;
+}
+.rating_wrap.small .rating {
+	background: url("/images/rating_small.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	height: 12px;
+	position: relative;
+	text-align: left;
+	width: 68px;
+	margin-bottom: 0;
+	padding: 0;
+}
+.rating_wrap.small .rating  span {
+	background: url("/images/rating_small.png") no-repeat scroll 0 -13.5px transparent;
+	cursor: pointer;
+	height: 12px;
+	left: 0;
+	position: absolute;
+	text-indent: -2000px;
+}
+
+.feedback_list {
+	padding: 15px 0;
+}
+
+.feedback_unit {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+span.date {
+	color: #999;
+	font-size: 12px;
+	padding-left: 3px;
+}
+
+.rating_wrap {
+ 
+    display: block;
+    margin: 5px 0 10px 0;
+}
+
+.feedback_title {
+	margin-bottom: 10px;
+}
+
+.feedback_unit.comment {
+	padding: 15px;
+	background-color: #f4f4f4;
+	border-bottom: none;
+}
+
+.feedback_unit.comment .feedback_title {
+	font-size: 13px;
+}
+
+.feedback_unit .btn_main a {
+	color: #fff;
+}
+
+.feedback_list .feedback_unit:last-child {
+	border-bottom: none;
+}
+
+.feedback_unit .text {
+	margin-bottom: 15px;
+}
+
+.popup_review .popup__wrapper {
+	padding: 25px 8px;
+}
+
+.popup_review .form .btn_main {
+	padding: 0 15px;
+	height: 35px;
+	line-height: 35px;
+}
+
 @media (min-width: 481px) {
+
 	
 	.productslist__item {
 		padding: 0 5px;
@@ -1962,6 +2178,10 @@ main {
 }
 
 @media (max-width: 374px) {
+	.navlinks__item a {
+		font-size: 11px;
+		width: 99px;
+	}
 	.cartcontent__button {
 		    max-width: 117px;
 	}
