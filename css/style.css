@@ -759,9 +759,7 @@ h2 {
 	justify-content: center;
 }
 
-.catalogmenu__items {
-	padding: 0 8px;
-}
+
 .catalogmenu__items > ul > li  {
 	
 	background-repeat: no-repeat;
@@ -1452,7 +1450,7 @@ input.quantity-field::-webkit-inner-spin-button {
 
 }
 
-.form .btn_main {
+.personal .form .btn_main {
 	padding:  0 40px;
 }
 
@@ -2376,7 +2374,6 @@ h2 {
 
 @media (min-width: 481px) {
 
-	
 	.productslist__item {
 		padding: 0 5px;
 		width: 33.33%;
@@ -2393,6 +2390,10 @@ h2 {
 	}
 }
 @media (min-width: 768px) {
+	.popup__content {
+    max-width: 480px;
+    margin: auto;
+}
 	
 	.productslist__item {
 		padding: 0 5px;
