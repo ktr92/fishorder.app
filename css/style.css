@@ -2206,12 +2206,21 @@ span.red {
 	padding-top: 10px;
 }
 
+.pagetext ol {
+	margin-bottom: 20px;
+}
+
+.pagetext a {
+	text-decoration: underline;
+}
+
 button.pageaccordion__title {
 	 background: rgb(255,255,255);
 	 border: none;
 	 display: block;
-	 height: 45px;
-	 line-height: 45px;
+	 min-height: 45px;
+	 display: flex;
+	 align-items: center;
 	 padding: 0 40px 0 15px;
 	 width: 100%;
 	 text-align: left;
@@ -2288,10 +2297,83 @@ button.pageaccordion__title.active:after {
 	background-color: #f4f4f4;
 	font-size: 12px;
 	color: #000;font-weight: 600;
+	margin-bottom: 20px;
 }
 .iconblock {
 	margin-bottom: 30px;
 }
+
+.aboutblock__content {
+	background-image: url(/images/about-01.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 55px 30px;
+}
+.aboutblock__text {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+}
+.aboutblock__title h1 {
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	    font-size: 31px;
+	    margin-bottom: 0;
+	    margin-top: 0;
+	    line-height: 1.2;
+
+}
+.aboutblock {
+	padding: 0 5px;
+}
+.aboutblock__title {
+	margin-bottom: 20px;
+}
+
+.texticon__img {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: #05b2c2;
+	text-align: center;
+	padding: 6px 0;
+}
+
+.texticon__img svg {
+	width: 31px;
+	height: 31px;
+}
+.texticon__img svg path, .texticon__img svg g rect {
+	fill: #fff;
+	stroke: #fff;
+}
+
+.texticon__item {
+	margin-bottom: 20px;
+}
+
+.texticon__content {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.texticon__text {
+	padding-left: 15px;
+	width: calc(100% - 60px);
+}
+
+.texticon {
+	margin: 20px 0;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 18px;
+}
+
 @media (min-width: 481px) {
 
 	
@@ -2320,6 +2402,18 @@ button.pageaccordion__title.active:after {
 }
 
 @media (max-width: 374px) {
+	.aboutblock__text {
+	    
+	    font-size: 12px;
+	   
+	}
+	.aboutblock__title h1 {
+
+		    font-size: 24px;
+
+
+	}
+
 	.navlinks__item a {
 		font-size: 11px;
 		width: 99px;
