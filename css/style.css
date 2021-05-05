@@ -1980,12 +1980,19 @@ main {
 }
 
 .pagetext ul  {
-	margin-left: 20px;
-	list-style: disc;
+	list-style: none;
 	margin-bottom: 20px;
 }
 .pagetext ul li {
-	
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.pagetext ul> li:before {
+  content: "\2014";
+  position: absolute;
+  left: 0;
 }
 
 .page {
@@ -2150,6 +2157,141 @@ span.date {
 	line-height: 35px;
 }
 
+.tabs__item {
+	display: none;
+}
+
+.tabs__item.active {
+	display: block;
+}
+
+span.red {
+	color: #c51230;
+}
+.tabs__header ul {
+	background: #f4f4f4;
+	display: inline-block;
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.tabs__header ul li {
+	color: #666666;
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	width: 49%;
+	text-align: center;
+	border-radius: 15px;
+	font-weight: 500;
+}
+
+.tabs__header ul li.active {
+	color: #666666;
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	width: 49%;
+	text-align: center;
+	border-radius: 15px;
+	background-color: #05b2c2;
+	color: #fff;
+}
+
+.tabs__content {
+	padding: 20px 0;
+}
+
+.tabs__header {
+	padding-top: 10px;
+}
+
+button.pageaccordion__title {
+	 background: rgb(255,255,255);
+	 border: none;
+	 display: block;
+	 height: 45px;
+	 line-height: 45px;
+	 padding: 0 40px 0 15px;
+	 width: 100%;
+	 text-align: left;
+	 position: relative;
+		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 100%);
+}
+button.pageaccordion__title:after {
+	    background-image: url(/images/new-accdown.png);
+    background-repeat: no-repeat;
+    background-position: center;
+   content: "";
+    width: 25px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 20px;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 7px);
+
+}
+
+button.pageaccordion__title.active:after {
+	    background-image: url(/images/new-accup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    width: 25px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.pageaccordion__content {
+		display: none;
+}
+
+.pageaccordion__content {
+	padding: 10px;
+	margin-bottom: 
+}
+.pageaccordion {
+	margin-bottom: 15px;
+}
+.iconblock__items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.iconblock__item {
+	width: 50%;
+}
+
+.iconblock__main {
+	padding-left: 40px;
+	background-position: left top;
+	background-repeat: no-repeat;
+
+}
+
+.iconblock__title {
+	margin-bottom: 5px;
+}
+
+.iconblock__text {
+	color: #7a7a7a;
+	font-size: 12px;
+}
+.pageimg {
+	margin-bottom: 20px;
+}
+.pageinfo {
+	padding: 15px 10px;
+	background-color: #f4f4f4;
+	font-size: 12px;
+	color: #000;font-weight: 600;
+}
+.iconblock {
+	margin-bottom: 30px;
+}
 @media (min-width: 481px) {
 
 	

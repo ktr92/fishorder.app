@@ -138,6 +138,23 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     decrementValue(e);
   });
 
+  $('.pageaccordion__title').click(function (event) {
+        $(this).toggleClass('active');
+        $(this).next('.pageaccordion__content').slideToggle();
+    });
 
 
 });
+
+ (function($) {
+    $(function() {
+     $('ul.tabs__caption_js').on('click', 'li:not(.active)', function() {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.tabs').find('div.tabs__item').removeClass('active').eq($(this).index()).addClass('active');
+
+        });
+
+    });
+})(jQuery);
+
